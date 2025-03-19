@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2025/03/17 11:07:03.000.637,=C:\scripts\delphi\Unit1.pas</Transaction>
+    <Transaction>2025/03/17 11:16:30.000.861,C:\scripts\delphi\projeto\Unit1.pas=C:\scripts\delphi\Unit1.pas</Transaction>
+    <Transaction>2025/03/17 11:16:30.000.861,C:\scripts\delphi\projeto\Unit1.dfm=C:\scripts\delphi\Unit1.dfm</Transaction>
+    <Transaction>2025/03/17 11:16:32.000.782,C:\scripts\delphi\projeto\Project1.dproj=C:\scripts\delphi\Project1.dproj</Transaction>
+    <Transaction>2025/03/17 12:04:18.000.716,=C:\scripts\delphi\projeto\Unit2.pas</Transaction>
+    <Transaction>2025/03/17 12:05:46.000.006,C:\scripts\delphi\projeto\Unit2.dfm=C:\scripts\delphi\projeto\conexao.dfm</Transaction>
+    <Transaction>2025/03/17 12:05:46.000.006,C:\scripts\delphi\projeto\Unit2.pas=C:\scripts\delphi\projeto\conexao.pas</Transaction>
+    <Transaction>2025/03/18 00:54:27.000.808,C:\scripts\delphi\projeto\Unit1.dfm=C:\scripts\delphi\projeto\View.principal.dfm</Transaction>
+    <Transaction>2025/03/18 00:54:27.000.808,C:\scripts\delphi\projeto\Unit1.pas=C:\scripts\delphi\projeto\View.principal.pas</Transaction>
+    <Transaction>2025/03/18 00:55:28.000.260,C:\scripts\delphi\projeto\conexao.pas=C:\scripts\delphi\projeto\Service.conexao.pas</Transaction>
+    <Transaction>2025/03/18 00:55:28.000.260,C:\scripts\delphi\projeto\conexao.dfm=C:\scripts\delphi\projeto\Service.conexao.dfm</Transaction>
+    <Transaction>2025/03/18 00:56:43.000.296,=C:\scripts\delphi\projeto\Unit1.pas</Transaction>
+    <Transaction>2025/03/18 00:56:56.000.226,C:\scripts\delphi\projeto\Unit1.dfm=C:\scripts\delphi\projeto\Service.cadastro.dfm</Transaction>
+    <Transaction>2025/03/18 00:56:56.000.226,C:\scripts\delphi\projeto\Unit1.pas=C:\scripts\delphi\projeto\Service.cadastro.pas</Transaction>
+    <Transaction>2025/03/18 02:16:50.000.893,C:\scripts\delphi\projeto\View.principal.pas=</Transaction>
+    <Transaction>2025/03/18 02:34:08.000.731,=C:\scripts\delphi\projeto\View.principal.pas</Transaction>
+    <Transaction>2025/03/19 02:48:21.000.845,C:\scripts\delphi\projeto\View.principal.pas=C:\scripts\delphi\projeto\src\View\View.principal.pas</Transaction>
+    <Transaction>2025/03/19 02:48:21.000.845,C:\scripts\delphi\projeto\View.principal.dfm=C:\scripts\delphi\projeto\src\View\View.principal.dfm</Transaction>
+    <Transaction>2025/03/19 02:48:57.000.815,C:\scripts\delphi\projeto\Service.cadastro.dfm=C:\scripts\delphi\projeto\src\Service\Service.cadastro.dfm</Transaction>
+    <Transaction>2025/03/19 02:48:57.000.815,C:\scripts\delphi\projeto\Service.cadastro.pas=C:\scripts\delphi\projeto\src\Service\Service.cadastro.pas</Transaction>
+    <Transaction>2025/03/19 02:49:26.000.563,C:\scripts\delphi\projeto\Service.conexao.dfm=C:\scripts\delphi\projeto\src\Service\Service.conexao.dfm</Transaction>
+    <Transaction>2025/03/19 02:49:26.000.563,C:\scripts\delphi\projeto\Service.conexao.pas=C:\scripts\delphi\projeto\src\Service\Service.conexao.pas</Transaction>
+    <Transaction>2025/03/19 02:53:39.000.803,=C:\scripts\delphi\projeto\Unit1.pas</Transaction>
+    <Transaction>2025/03/19 02:53:55.000.960,=C:\scripts\delphi\projeto\Unit1.pas</Transaction>
+    <Transaction>2025/03/19 02:54:50.000.708,C:\scripts\delphi\projeto\Unit1.pas=C:\scripts\delphi\projeto\src\View\View.pas</Transaction>
+    <Transaction>2025/03/19 02:54:50.000.708,C:\scripts\delphi\projeto\Unit1.dfm=C:\scripts\delphi\projeto\src\View\View.dfm</Transaction>
+    <Transaction>2025/03/19 10:49:17.000.791,C:\scripts\delphi\projeto\src\View\View.user.pas=C:\scripts\delphi\projeto\src\View\View.pas</Transaction>
+    <Transaction>2025/03/19 10:49:17.000.791,C:\scripts\delphi\projeto\src\View\View.user.dfm=C:\scripts\delphi\projeto\src\View\View.dfm</Transaction>
+    <Transaction>2025/03/19 14:01:57.000.037,C:\scripts\delphi\projeto\Project1.dproj=C:\scripts\delphi\projeto\Usuarios.dproj</Transaction>
+    <Transaction>2025/03/19 14:26:45.402,C:\scripts\delphi\projeto\src\Service\Service.query.dfm=C:\scripts\delphi\projeto\src\Service\Service.cadastro.dfm</Transaction>
+    <Transaction>2025/03/19 14:26:45.402,C:\scripts\delphi\projeto\src\Service\Service.query.pas=C:\scripts\delphi\projeto\src\Service\Service.cadastro.pas</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="src"/>
+    <File Path="src\Service"/>
+    <File Path="src\Service\Service.conexao.pas"/>
+    <File Path="src\Service\Service.conexao.dfm"/>
+    <File Path="src\Service\Service.query.pas"/>
+    <File Path="src\Service\Service.query.dfm"/>
+    <File Path="src\View"/>
+    <File Path="src\View\View.principal.pas"/>
+    <File Path="src\View\View.principal.dfm"/>
+    <File Path="src\View\View.user.pas"/>
+    <File Path="src\View\View.user.dfm"/>
+  </ProjectSortOrder>
+</BorlandProject>
