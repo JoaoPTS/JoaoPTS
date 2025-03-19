@@ -129,7 +129,7 @@
             <DesignClass>TDataModule</DesignClass>
         </DCCReference>
         <DCCReference Include="src\Service\Service.query.pas">
-            <Form>ServiceCadastro</Form>
+            <Form>ServiceQuery</Form>
             <FormType>dfm</FormType>
             <DesignClass>TDataModule</DesignClass>
         </DCCReference>

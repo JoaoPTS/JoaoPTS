@@ -19,7 +19,7 @@ uses
   Service.conexao;
 
 type
-  TServiceCadastro = class(TDataModule)
+  TServiceQuery = class(TDataModule)
     QRY_user: TFDQuery;
     QRY_userID: TIntegerField;
     QRY_userNAME: TStringField;
@@ -31,7 +31,7 @@ type
   end;
 
 var
-  ServiceCadastro: TServiceCadastro;
+  ServiceQuery: TServiceQuery;
 
 implementation
 

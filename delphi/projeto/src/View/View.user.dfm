@@ -146,7 +146,7 @@ object ViewUser: TViewUser
     Width = 1024
     Height = 345
     Align = alClient
-    ActiveCard = CLista
+    ActiveCard = CCadastro
     BevelOuter = bvNone
     Caption = 'CPLista'
     TabOrder = 2
@@ -158,7 +158,7 @@ object ViewUser: TViewUser
       Caption = 'car_lista'
       CardIndex = 0
       TabOrder = 0
-      object PPesquisa: TPanel
+      object PLista: TPanel
         Left = 0
         Top = 0
         Width = 1024
@@ -274,7 +274,7 @@ object ViewUser: TViewUser
         Font.Style = []
         ParentFont = False
       end
-      object Panel1: TPanel
+      object PUsuario: TPanel
         Left = 0
         Top = 0
         Width = 1024
@@ -344,7 +344,7 @@ object ViewUser: TViewUser
     end
   end
   object DSLista: TDataSource
-    DataSet = ServiceCadastro.QRY_user
+    DataSet = ServiceQuery.QRY_user
     Left = 1344
     Top = 312
   end

@@ -1,0 +1,9 @@
+# Projeto Delphi com CRUD
+
+## Descrição
+Um projeto simples de Delphi com uma tabela usuário.
+
+## Instalação
+Trocar a informações no arquivo Login.ini dentro de Debug para as informações que está utilizando.
+
+Rodar o arquivo .exe.

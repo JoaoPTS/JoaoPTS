@@ -64,9 +64,8 @@ begin
   LDatabase := LIniFile.ReadString('Conexao','Database',LDatabase);
   LServidor := LIniFile.ReadString('Conexao', 'Servidor', LServidor);
   LPorta := LIniFile.ReadInteger('Conexao', 'Porta', LPorta);
-
-  LUser_name := 'SYSDBA';
-  LPassword :=  '123456';
+  LUser_name := LIniFile.ReadString('Conexao', 'Usuario', LUser_name);
+  LPassword :=  LIniFile.ReadString('Conexao', 'Senha', LPassword);
 
   FDconn.Params.Values['Database'] := LDatabase;
   FDconn.Params.Values['Server'] := LServidor;

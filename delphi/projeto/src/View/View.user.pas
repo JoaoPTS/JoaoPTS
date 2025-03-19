@@ -18,7 +18,9 @@ uses
   Vcl.Grids,
   Vcl.DBGrids,
   Vcl.WinXPanels,
-  Service.cadastro, Vcl.Mask, Vcl.DBCtrls;
+  Service.query,
+  Vcl.Mask,
+  Vcl.DBCtrls;
 
 type
   TViewUser = class(TForm)
@@ -30,14 +32,14 @@ type
     BSalvar: TButton;
     BCancelar: TButton;
     DBLista: TDBGrid;
-    PPesquisa: TPanel;
+    PLista: TPanel;
     LPesquisa: TLabel;
     DSLista: TDataSource;
     CPLista: TCardPanel;
     CLista: TCard;
     CCadastro: TCard;
     BFechar: TButton;
-    Panel1: TPanel;
+    PUsuario: TPanel;
     LUsuario: TLabel;
     LName: TLabel;
     DBEname: TDBEdit;
@@ -70,10 +72,10 @@ implementation
 procedure TViewUser.BCancelarClick(Sender: TObject);
 begin
   inherited;
-  if ServiceCadastro.QRY_user.State in dsEditModes then
+  if ServiceQuery.QRY_user.State in dsEditModes then
 
   begin
-    ServiceCadastro.QRY_user.Cancel;
+    ServiceQuery.QRY_user.Cancel;
     CPLista.ActiveCard := CLista;
   end;
 
@@ -84,16 +86,16 @@ begin
   inherited;
   LUsuario.Caption := 'Editar Usuário';
   CPLista.ActiveCard := CCadastro;
-  ServiceCadastro.QRY_user.Edit;
+  ServiceQuery.QRY_user.Edit;
 end;
 
 procedure TViewUser.BExcluirClick(Sender: TObject);
 begin
 if Application.MessageBox('Tem certeza?','Confirmar',mb_yesno + mb_iconquestion) = id_yes then
 begin
- if ServiceCadastro.QRY_user.RecordCount > 0 then
+ if ServiceQuery.QRY_user.RecordCount > 0 then
  begin
-   ServiceCadastro.QRY_user .Delete;
+   ServiceQuery.QRY_user .Delete;
    ShowMessage('Usuário Excluido com Sucesso');
 
  end;
@@ -113,16 +115,16 @@ begin
   inherited;
   LUsuario.Caption := 'Novo Usuário';
   CPLista.ActiveCard := CCadastro;
-  ServiceCadastro.QRY_user.Insert;
+  ServiceQuery.QRY_user.Insert;
 end;
 
 procedure TViewUser.BSalvarClick(Sender: TObject);
 begin
   inherited;
-  if ServiceCadastro.QRY_user.State in dsEditModes then
+  if ServiceQuery.QRY_user.State in dsEditModes then
 
   begin
-    ServiceCadastro.QRY_user.Post;
+    ServiceQuery.QRY_user.Post;
     CPLista.ActiveCard := CLista;
     ShowMessage('Usuário Salvo com Sucesso');
 
@@ -138,10 +140,10 @@ end;
 
 procedure TViewUser.GET_Usuario;
 begin
-  ServiceCadastro.QRY_User.Close;
-  ServiceCadastro.QRY_user.SQL.Clear;
-  ServiceCadastro.QRY_user.SQL.Add('select * from "USER"');
-  ServiceCadastro.QRY_user.Open();
+  ServiceQuery.QRY_User.Close;
+  ServiceQuery.QRY_user.SQL.Clear;
+  ServiceQuery.QRY_user.SQL.Add('select * from "USER"');
+  ServiceQuery.QRY_user.Open();
 
 end;
 
