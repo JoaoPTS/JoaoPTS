@@ -84,7 +84,7 @@ end;
 procedure TViewUser.BEditarClick(Sender: TObject);
 begin
   inherited;
-  LUsuario.Caption := 'Editar Usuário';
+  LUsuario.Caption := 'Editar UsuÃ¡rio';
   CPLista.ActiveCard := CCadastro;
   ServiceQuery.QRY_user.Edit;
 end;
@@ -96,12 +96,11 @@ begin
  if ServiceQuery.QRY_user.RecordCount > 0 then
  begin
    ServiceQuery.QRY_user .Delete;
-   ShowMessage('Usuário Excluido com Sucesso');
+   ShowMessage('UsuÃ¡rio Excluido com Sucesso');
 
  end;
 
 end;
-  ShowMessage('Usuário Não foi Excluido');
 
 end;
 
@@ -113,7 +112,7 @@ end;
 procedure TViewUser.BNovoClick(Sender: TObject);
 begin
   inherited;
-  LUsuario.Caption := 'Novo Usuário';
+  LUsuario.Caption := 'Novo UsuÃ¡rio';
   CPLista.ActiveCard := CCadastro;
   ServiceQuery.QRY_user.Insert;
 end;
@@ -126,7 +125,7 @@ begin
   begin
     ServiceQuery.QRY_user.Post;
     CPLista.ActiveCard := CLista;
-    ShowMessage('Usuário Salvo com Sucesso');
+    ShowMessage('UsuÃ¡rio Salvo com Sucesso');
 
   end;
 
