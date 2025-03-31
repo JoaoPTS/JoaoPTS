@@ -1,0 +1,21 @@
+# TCC-Técnico
+
+Este projeto faz parte de um trabalho de conclusão de curso técnico. 
+Ele foi desenvolvido utilizando PHP e é projetado para demonstrar as habilidades e conhecimentos adquiridos durante o curso.
+
+## Requisitos
+
+- PHP 7.4 ou superior
+- MySQL ou outro banco de dados (se aplicável)
+
+## Instalação
+
+1. Configure a conexão com o banco de dados no arquivo de configuração localizado em database/doomgym.sql.
+
+2. Inicie seu servidor web e acesse o projeto no navegador.
+
+## Uso
+
+- Substituir as informações do banco de dados no arquivo database/Mydatasource.php.
+
+- Para iniciar o projeto deve-se abrir a pasta no navegador de escolha, ou iniciar diretamente o index.php.
