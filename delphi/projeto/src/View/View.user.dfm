@@ -266,7 +266,6 @@ object ViewUser: TViewUser
         Width = 27
         Height = 38
         Caption = 'ID'
-        FocusControl = DBid
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -28
@@ -325,20 +324,13 @@ object ViewUser: TViewUser
         ParentFont = False
         TabOrder = 2
       end
-      object DBid: TDBEdit
+      object DBEdit1: TDBEdit
         Left = 360
         Top = 180
-        Width = 64
+        Width = 113
         Height = 39
         DataField = 'ID'
         DataSource = DSLista
-        Enabled = False
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -23
-        Font.Name = 'Segoe UI'
-        Font.Style = []
-        ParentFont = False
         TabOrder = 3
       end
     end

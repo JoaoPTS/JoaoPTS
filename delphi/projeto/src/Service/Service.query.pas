@@ -24,6 +24,9 @@ type
     QRY_userID: TIntegerField;
     QRY_userNAME: TStringField;
     QRY_userPASS: TStringField;
+    QRY_userAUTOID: TFDQuery;
+    QRY_userAUTOIDGEN_ID: TLargeintField;
+    procedure QRY_userAfterInsert(DataSet: TDataSet);
   private
     { Private declarations }
   public
@@ -38,5 +41,13 @@ implementation
 {%CLASSGROUP 'Vcl.Controls.TControl'}
 
 {$R *.dfm}
+
+procedure TServiceQuery.QRY_userAfterInsert(DataSet: TDataSet);
+begin
+  QRY_userAUTOID.Open();
+  QRY_userID.AsInteger := QRY_userAUTOIDGEN_ID.AsInteger;
+  QRY_userAUTOID.Close();
+
+end;
 
 end.

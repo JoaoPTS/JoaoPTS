@@ -1,29 +1,27 @@
 object ServiceConexao: TServiceConexao
   OnCreate = DataModuleCreate
-  Height = 1470
-  Width = 1960
-  PixelsPerInch = 168
+  Height = 840
+  Width = 1120
   object FDConn: TFDConnection
     Params.Strings = (
       'User_Name=SYSDBA'
-      'Password=123456'
+      'Password=masterkey'
       'Protocol=TCPIP'
       'Server=Localhost'
       'CharacterSet=WIN1252'
       'Port=3050'
-      'Database=C:\scripts\bd\PROJETO.FDB'
+      'Database=C:\Temp\projeto\Database\PROJETO.FDB'
       'DriverID=FB')
-    Connected = True
-    Left = 576
-    Top = 400
+    Left = 329
+    Top = 229
   end
   object WaitCursor: TFDGUIxWaitCursor
     Provider = 'Forms'
-    Left = 952
-    Top = 392
+    Left = 544
+    Top = 224
   end
   object FBDriverLink: TFDPhysFBDriverLink
-    Left = 952
-    Top = 504
+    Left = 544
+    Top = 288
   end
 end

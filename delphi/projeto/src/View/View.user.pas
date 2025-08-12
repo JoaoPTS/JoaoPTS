@@ -1,4 +1,4 @@
-unit View.user;
+﻿unit View.user;
 
 interface
 
@@ -46,7 +46,7 @@ type
     LPass: TLabel;
     DBEpass: TDBEdit;
     Label1: TLabel;
-    DBid: TDBEdit;
+    DBEdit1: TDBEdit;
     procedure BFecharClick(Sender: TObject);
     procedure PHeaderMouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Integer);
@@ -115,6 +115,7 @@ begin
   LUsuario.Caption := 'Novo Usuário';
   CPLista.ActiveCard := CCadastro;
   ServiceQuery.QRY_user.Insert;
+
 end;
 
 procedure TViewUser.BSalvarClick(Sender: TObject);
