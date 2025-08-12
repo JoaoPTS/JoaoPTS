@@ -1,4 +1,6 @@
-# Projeto Delphi com CRUD
+# Projeto Delphi com CRUD em FireBird
+Projeto utilizando o delphi 12
+Banco de dados Firebird 2.5
 
 ## Descrição
 Um projeto simples de Delphi com uma tabela usuário.
